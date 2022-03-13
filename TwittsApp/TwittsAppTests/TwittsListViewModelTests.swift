@@ -27,8 +27,8 @@ class TwittsListViewModelTests: XCTestCase {
         if result == XCTWaiter.Result.timedOut {
             XCTAssertEqual(viewModel.twitts.count, 10)
 
-            if let firstData = viewModel.twitts[0].data?.identifier, let firstId = Int(firstData),
-               let lastData = viewModel.twitts[9].data?.identifier, let lastId = Int(lastData) {
+            if let firstData = viewModel.twitts[0].data?.id, let firstId = Int(firstData),
+               let lastData = viewModel.twitts[9].data?.id, let lastId = Int(lastData) {
                 XCTAssertTrue(firstId > lastId)
             }
         } else {
