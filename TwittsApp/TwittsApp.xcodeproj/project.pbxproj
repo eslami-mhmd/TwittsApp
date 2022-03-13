@@ -32,6 +32,7 @@
 		115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */; };
 		115A02F027DD73C80086E7FE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EF27DD73C80086E7FE /* APIError.swift */; };
 		115A02F227DD742B0086E7FE /* RemoteAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F127DD742B0086E7FE /* RemoteAPIProtocol.swift */; };
+		115A02F427DD74500086E7FE /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F327DD74500086E7FE /* RemoteAPI.swift */; };
 		115A02F627DD74910086E7FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F527DD74910086E7FE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseProtocol.swift; sourceTree = "<group>"; };
 		115A02EF27DD73C80086E7FE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		115A02F127DD742B0086E7FE /* RemoteAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPIProtocol.swift; sourceTree = "<group>"; };
+		115A02F327DD74500086E7FE /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
 		115A02F527DD74910086E7FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				115A02F127DD742B0086E7FE /* RemoteAPIProtocol.swift */,
+				115A02F327DD74500086E7FE /* RemoteAPI.swift */,
 				115A02E127DD73000086E7FE /* RequestModels */,
 				115A02E227DD730A0086E7FE /* ResponseModels */,
 			);
@@ -375,6 +378,7 @@
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A02F227DD742B0086E7FE /* RemoteAPIProtocol.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02F427DD74500086E7FE /* RemoteAPI.swift in Sources */,
 				115A02F627DD74910086E7FE /* Constants.swift in Sources */,
 				115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */,
 				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
