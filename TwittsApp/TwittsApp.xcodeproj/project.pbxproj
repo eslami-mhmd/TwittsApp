@@ -10,7 +10,6 @@
 		115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A029227DD6A680086E7FE /* AppDelegate.swift */; };
 		115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A029427DD6A680086E7FE /* SceneDelegate.swift */; };
 		115A029727DD6A680086E7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A029627DD6A680086E7FE /* ViewController.swift */; };
-		115A029A27DD6A680086E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A029827DD6A680086E7FE /* Main.storyboard */; };
 		115A029C27DD6A690086E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115A029B27DD6A690086E7FE /* Assets.xcassets */; };
 		115A029F27DD6A690086E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A029D27DD6A690086E7FE /* LaunchScreen.storyboard */; };
 		115A02AA27DD6A690086E7FE /* TwittsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02A927DD6A690086E7FE /* TwittsAppTests.swift */; };
@@ -43,7 +42,6 @@
 		115A029227DD6A680086E7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115A029427DD6A680086E7FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		115A029627DD6A680086E7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		115A029927DD6A680086E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		115A029B27DD6A690086E7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115A029E27DD6A690086E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115A02A027DD6A690086E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				115A029227DD6A680086E7FE /* AppDelegate.swift */,
 				115A029427DD6A680086E7FE /* SceneDelegate.swift */,
 				115A029627DD6A680086E7FE /* ViewController.swift */,
-				115A029827DD6A680086E7FE /* Main.storyboard */,
 				115A029B27DD6A690086E7FE /* Assets.xcassets */,
 				115A029D27DD6A690086E7FE /* LaunchScreen.storyboard */,
 				115A02A027DD6A690086E7FE /* Info.plist */,
@@ -249,7 +246,6 @@
 			files = (
 				115A029F27DD6A690086E7FE /* LaunchScreen.storyboard in Resources */,
 				115A029C27DD6A690086E7FE /* Assets.xcassets in Resources */,
-				115A029A27DD6A680086E7FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		115A029827DD6A680086E7FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				115A029927DD6A680086E7FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		115A029D27DD6A690086E7FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,7 +448,6 @@
 				INFOPLIST_FILE = TwittsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +475,6 @@
 				INFOPLIST_FILE = TwittsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
