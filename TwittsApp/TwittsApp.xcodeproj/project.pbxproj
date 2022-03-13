@@ -11,7 +11,7 @@
 		115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A029427DD6A680086E7FE /* SceneDelegate.swift */; };
 		115A029C27DD6A690086E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115A029B27DD6A690086E7FE /* Assets.xcassets */; };
 		115A029F27DD6A690086E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A029D27DD6A690086E7FE /* LaunchScreen.storyboard */; };
-		115A02AA27DD6A690086E7FE /* TwittsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02A927DD6A690086E7FE /* TwittsAppTests.swift */; };
+		115A02AA27DD6A690086E7FE /* TwittsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02A927DD6A690086E7FE /* TwittsListViewModelTests.swift */; };
 		115A02B427DD6A690086E7FE /* TwittsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02B327DD6A690086E7FE /* TwittsAppUITests.swift */; };
 		115A02B627DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02B527DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift */; };
 		115A02CA27DD6DD00086E7FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02C927DD6DD00086E7FE /* Alamofire */; };
@@ -78,7 +78,7 @@
 		115A029E27DD6A690086E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115A02A027DD6A690086E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115A02A527DD6A690086E7FE /* TwittsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwittsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		115A02A927DD6A690086E7FE /* TwittsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppTests.swift; sourceTree = "<group>"; };
+		115A02A927DD6A690086E7FE /* TwittsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsListViewModelTests.swift; sourceTree = "<group>"; };
 		115A02AF27DD6A690086E7FE /* TwittsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwittsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115A02B327DD6A690086E7FE /* TwittsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITests.swift; sourceTree = "<group>"; };
 		115A02B527DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		115A02A827DD6A690086E7FE /* TwittsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				115A02A927DD6A690086E7FE /* TwittsAppTests.swift */,
+				115A02A927DD6A690086E7FE /* TwittsListViewModelTests.swift */,
 			);
 			path = TwittsAppTests;
 			sourceTree = "<group>";
@@ -477,7 +477,7 @@
 				115A02DF27DD72A40086E7FE /* UserModel.swift in Sources */,
 				115A02FB27DD76E70086E7FE /* APIResponseProtocol.swift in Sources */,
 				115A02FE27DD77010086E7FE /* RemoteAPIMock.swift in Sources */,
-				115A02AA27DD6A690086E7FE /* TwittsAppTests.swift in Sources */,
+				115A02AA27DD6A690086E7FE /* TwittsListViewModelTests.swift in Sources */,
 				115A030C27DD78860086E7FE /* TwittsListViewModel.swift in Sources */,
 				115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */,
 				115A02FD27DD76FD0086E7FE /* TwittResponse.swift in Sources */,

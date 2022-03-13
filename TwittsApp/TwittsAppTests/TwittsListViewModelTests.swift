@@ -8,7 +8,32 @@
 import XCTest
 @testable import TwittsApp
 
-class TwittsAppTests: XCTestCase {
+class TwittsListViewModelTests: XCTestCase {
+    private var repo: TwittsRepositoryMock!
+    private var viewModel: TwittsListViewModel!
+
+    @MainActor override func setUp() {
+        super.setUp()
+        repo = TwittsRepositoryMock(remoteAPI: RemoteAPIMock())
+        viewModel = TwittsListViewModel(twittsRepository: repo)
+    }
+    
+    func testFetchTwitts() {
+        viewModel.fetchTwitts()
+        
+        let exp = expectation(description: "Test after some delay to check if in view model, twitts received from api. Then check sort action is correct")
+        let result = XCTWaiter.wait(for: [exp], timeout: 0.1)
+        if result == XCTWaiter.Result.timedOut {
+            XCTAssertEqual(viewModel.twitts.count, 10)
+            
+            if let firstData = viewModel.twitts[0].data?.id, let firstId = Int(firstData),
+               let lastData = viewModel.twitts[9].data?.id, let lastId = Int(lastData) {
+                XCTAssertTrue(firstId > lastId)
+            }
+        } else {
+            XCTFail("Delay interrupted")
+        }
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
