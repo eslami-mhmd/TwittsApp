@@ -18,6 +18,12 @@
 		115A02CD27DD6EBB0086E7FE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02CC27DD6EBB0086E7FE /* SnapKit */; };
 		115A02D027DD6EFC0086E7FE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02CF27DD6EFC0086E7FE /* Kingfisher */; };
 		115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D227DD70370086E7FE /* TwittsListController.swift */; };
+		115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D927DD72760086E7FE /* TwittModel.swift */; };
+		115A02DC27DD72850086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
+		115A02DD27DD72A10086E7FE /* TwittModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D927DD72760086E7FE /* TwittModel.swift */; };
+		115A02DE27DD72A20086E7FE /* TwittModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D927DD72760086E7FE /* TwittModel.swift */; };
+		115A02DF27DD72A40086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
+		115A02E027DD72A50086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,8 @@
 		115A02B327DD6A690086E7FE /* TwittsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITests.swift; sourceTree = "<group>"; };
 		115A02B527DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		115A02D227DD70370086E7FE /* TwittsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListController.swift; sourceTree = "<group>"; };
+		115A02D927DD72760086E7FE /* TwittModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittModel.swift; sourceTree = "<group>"; };
+		115A02DB27DD72850086E7FE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +175,8 @@
 		115A02D727DD71D30086E7FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				115A02D927DD72760086E7FE /* TwittModel.swift */,
+				115A02DB27DD72850086E7FE /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,8 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */,
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
 				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115A02DD27DD72A10086E7FE /* TwittModel.swift in Sources */,
+				115A02DF27DD72A40086E7FE /* UserModel.swift in Sources */,
 				115A02AA27DD6A690086E7FE /* TwittsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				115A02B427DD6A690086E7FE /* TwittsAppUITests.swift in Sources */,
+				115A02DE27DD72A20086E7FE /* TwittModel.swift in Sources */,
+				115A02E027DD72A50086E7FE /* UserModel.swift in Sources */,
 				115A02B627DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
