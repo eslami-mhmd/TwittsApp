@@ -17,15 +17,16 @@ class TwittsListViewModelTests: XCTestCase {
         repo = TwittsRepositoryMock(remoteAPI: RemoteAPIMock())
         viewModel = TwittsListViewModel(twittsRepository: repo)
     }
-    
+
     func testFetchTwitts() {
         viewModel.fetchTwitts()
-        
-        let exp = expectation(description: "Test after some delay to check if in view model, twitts received from api. Then check sort action is correct")
+
+        let exp = expectation(description:
+                                "after some delay check if twitts received in view model.Then check sort is correct")
         let result = XCTWaiter.wait(for: [exp], timeout: 0.1)
         if result == XCTWaiter.Result.timedOut {
             XCTAssertEqual(viewModel.twitts.count, 10)
-            
+
             if let firstData = viewModel.twitts[0].data?.id, let firstId = Int(firstData),
                let lastData = viewModel.twitts[9].data?.id, let lastId = Int(lastData) {
                 XCTAssertTrue(firstId > lastId)
@@ -48,7 +49,6 @@ class TwittsListViewModelTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
 
     func testPerformanceExample() throws {

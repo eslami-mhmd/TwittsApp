@@ -11,7 +11,7 @@ import Combine
 class TwittsRepositoryMock: TwittsRepositoryProtocol {
     // MARK: - Properties
     let remoteAPI: RemoteAPIProtocol
-    
+
     @Published private(set) var twitt: TwittResponse?
     var twittPublished: Published<TwittResponse?> { _twitt }
     var twittPublisher: Published<TwittResponse?>.Publisher { $twitt }
@@ -21,7 +21,7 @@ class TwittsRepositoryMock: TwittsRepositoryProtocol {
     public init(remoteAPI: RemoteAPIProtocol) {
         self.remoteAPI = remoteAPI
     }
-    
+
     func fetchTwitts() async throws {
         remoteAPI.twittPublisher
             .receive(on: DispatchQueue.main)
@@ -29,10 +29,9 @@ class TwittsRepositoryMock: TwittsRepositoryProtocol {
                 self?.twitt = twitt
             }.store(in: &anyCancel)
 
-
         return try await remoteAPI.fetchTwitts()
     }
-    
+
     func updateRule(ruleText: String) async throws {
     }
 }

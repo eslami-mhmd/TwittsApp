@@ -104,7 +104,7 @@ private extension TwittsListCell {
             snp.width.height.equalTo(avatarHeight)
         }
     }
-    
+
     func setupStackViewVertical() {
         stackViewVertical.addArrangedSubview(stackViewHeader)
         stackViewVertical.addArrangedSubview(twittTextLabel)
@@ -127,7 +127,7 @@ extension TwittsListCell {
         timeLabel.text?.removeAll()
         avatarView.cancelImageLoad()
     }
-    
+
     func setCellData(twitt: TwittResponse) {
         twittTextLabel.text = twitt.data?.text
         displayNameLabel.text = twitt.includes?.users[safe: 0]?.name
@@ -135,7 +135,7 @@ extension TwittsListCell {
         avatarView.setImage(urlString: twitt.includes?.users[safe: 0]?.profile_image_url)
         setTime(twitt.data?.created_at ?? "")
     }
-    
+
     func setTime(_ timeString: String) {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions =  [.withInternetDateTime, .withFractionalSeconds]

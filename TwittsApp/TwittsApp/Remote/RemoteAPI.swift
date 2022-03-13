@@ -24,14 +24,14 @@ class RemoteAPI: RemoteAPIProtocol {
         let tweetFields: String?
         let expansions: String?
         let userFields: String?
-        
+
         enum CodingKeys: String, CodingKey {
             case tweetFields = "tweet.fields"
             case expansions
             case userFields = "user.fields"
         }
     }
-    
+
     @Published private(set) var twitt: TwittResponse?
     var twittPublished: Published<TwittResponse?> { _twitt }
     var twittPublisher: Published<TwittResponse?>.Publisher { $twitt }
@@ -40,10 +40,14 @@ class RemoteAPI: RemoteAPIProtocol {
     private func joinParamValues<T: RawRepresentable>(values: [T]) -> String where T.RawValue == String {
         return values.map({ $0.rawValue }).joined(separator: ",")
     }
-    
+
     func fetchTwitts() async throws {
         if let streamURL = URL(string: Constants.Network.baseURL.appending("search/stream")) {
-            let params = TwittParams(tweetFields: joinParamValues(values: [TwittFields.created_at, TwittFields.public_metrics]), expansions: TwittExpansions.author_id.rawValue, userFields: UserFields.profile_image_url.rawValue)
+            let params = TwittParams(tweetFields: joinParamValues(values: [
+                TwittFields.created_at,
+                TwittFields.public_metrics]),
+                                     expansions: TwittExpansions.author_id.rawValue,
+                                     userFields: UserFields.profile_image_url.rawValue)
             let streamTask = AF.streamRequest(streamURL,
                                               method: .get,
                                               parameters: params,
@@ -54,7 +58,7 @@ class RemoteAPI: RemoteAPIProtocol {
             }
         }
     }
-    
+
     func addRule(ruleText: String) async throws {
         let rule = AddRule(add: [AddRuleValue(value: ruleText)])
         let jsonData = try JSONEncoder().encode(rule)
@@ -77,7 +81,7 @@ class RemoteAPI: RemoteAPIProtocol {
         if let url = URL(string: Constants.Network.baseURL.appending("search/stream/rules")) {
             var urlRequest = try URLRequest(url: url, method: .post, headers: Constants.Network.commonHeader)
             urlRequest.httpBody = jsonData
-            
+
             let result = try await AF.request(urlRequest)
                 .serializingDecodable(RuleDeleteReponse.self).value
             if let errors = result.errors, let error = errors.first {
