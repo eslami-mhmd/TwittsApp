@@ -48,6 +48,7 @@
 		115A030C27DD78860086E7FE /* TwittsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */; };
 		115A030E27DD78CA0086E7FE /* TwittDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */; };
 		115A031027DD792F0086E7FE /* ReuseIdentifyingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */; };
+		115A031327DD79720086E7FE /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A031227DD79720086E7FE /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListViewModel.swift; sourceTree = "<group>"; };
 		115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittDetailsViewModel.swift; sourceTree = "<group>"; };
 		115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifyingProtocol.swift; sourceTree = "<group>"; };
+		115A031227DD79720086E7FE /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		115A02D127DD70130086E7FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				115A031127DD794E0086E7FE /* ReusableViews */,
 				115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */,
 				115A02D227DD70370086E7FE /* TwittsListController.swift */,
 			);
@@ -262,6 +265,14 @@
 				115A02EF27DD73C80086E7FE /* APIError.swift */,
 			);
 			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		115A031127DD794E0086E7FE /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				115A031227DD79720086E7FE /* AvatarView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +428,7 @@
 				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
 				115A02F027DD73C80086E7FE /* APIError.swift in Sources */,
 				115A02E827DD73990086E7FE /* RuleResponse.swift in Sources */,
+				115A031327DD79720086E7FE /* AvatarView.swift in Sources */,
 				115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */,
 				115A030127DD77470086E7FE /* Collection+Extension.swift in Sources */,
 				115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */,
