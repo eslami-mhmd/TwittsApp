@@ -20,18 +20,16 @@ class TwittsRepository: TwittsRepositoryProtocol {
     public init(remoteAPI: RemoteAPIProtocol) {
         self.remoteAPI = remoteAPI
     }
-    
+
     func fetchTwitts() async throws {
         remoteAPI.twittPublisher
             .receive(on: DispatchQueue.main)
             .sink { [weak self] twitt in
                 self?.twitt = twitt
             }.store(in: &anyCancel)
-
-
         return try await remoteAPI.fetchTwitts()
     }
-    
+
     func updateRule(ruleText: String) async throws {
         if let id = try await remoteAPI.getRule() {
             try await remoteAPI.deleteRule(id: id)

@@ -9,11 +9,11 @@ import Foundation
 
 class RemoteAPIMock: RemoteAPIProtocol {
   // MARK: - Properties
-    
+
     @Published private(set) var twitt: TwittResponse?
     var twittPublished: Published<TwittResponse?> { _twitt }
     var twittPublisher: Published<TwittResponse?>.Publisher { $twitt }
-    
+
   // MARK: - Methods
     func fetchTwitts() async throws {
         for i in 0..<10 {
@@ -34,7 +34,7 @@ class RemoteAPIMock: RemoteAPIProtocol {
             self.twitt = twittResponse
         }
     }
-    
+
     func addRule(ruleText: String) async throws {
     }
 

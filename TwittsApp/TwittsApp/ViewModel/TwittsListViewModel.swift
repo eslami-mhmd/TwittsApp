@@ -19,7 +19,7 @@ class TwittsListViewModel: ObservableObject {
         self.twittsRepository = twittsRepository
         bindSearchText()
     }
-    
+
     func fetchTwitts() {
         twittsRepository.twittPublisher
             .receive(on: DispatchQueue.main)
@@ -41,15 +41,15 @@ class TwittsListViewModel: ObservableObject {
                 }
             }.store(in: &anyCancel)
 
-        Task {            
+        Task {
             try await twittsRepository.fetchTwitts()
         }
     }
-    
+
     func updateSearchValue(value: String?) {
         searchedValue = value
     }
-    
+
     private func bindSearchText() {
         $searchedValue
             .dropFirst()
@@ -63,7 +63,7 @@ class TwittsListViewModel: ObservableObject {
             })
             .store(in: &anyCancel)
     }
-    
+
     private func updateRule(ruleText: String) {
         Task {
             try await twittsRepository.updateRule(ruleText: ruleText)

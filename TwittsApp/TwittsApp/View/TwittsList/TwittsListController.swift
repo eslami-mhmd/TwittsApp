@@ -71,8 +71,10 @@ private extension TwittsListController {
     }
 
     func setupDataSource() {
-        dataSource = UITableViewDiffableDataSource(tableView: tableView, cellProvider: { tableView, indexPath, twitt -> UITableViewCell? in
-            if let cell = tableView.dequeueReusableCell(withIdentifier: TwittsListCell.reuseIdentifier, for: indexPath) as? TwittsListCell {
+        dataSource = UITableViewDiffableDataSource(tableView: tableView,
+                                                   cellProvider: { tableView, indexPath, twitt -> UITableViewCell? in
+            if let cell = tableView.dequeueReusableCell(
+                withIdentifier: TwittsListCell.reuseIdentifier, for: indexPath) as? TwittsListCell {
                 cell.resetCell()
                 cell.setCellData(twitt: twitt)
                 return cell

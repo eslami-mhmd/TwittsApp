@@ -118,7 +118,7 @@ class TwittDetailsController: UIViewController {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -135,7 +135,7 @@ private extension TwittDetailsController {
     func setupViews() {
         navigationItem.title = Constants.StringLabels.twittLabel
         view.backgroundColor = .systemGray6
-        
+
         view.addSubview(scrollView)
         scrollView.addSubview(stackViewVertical)
         scrollView.snp.makeConstraints { snp in
@@ -148,7 +148,7 @@ private extension TwittDetailsController {
             snp.edges.equalToSuperview()
             snp.width.equalTo(scrollView.snp.width)
         }
-        
+
         stackViewVertical.addArrangedSubview(stackViewHeader)
         stackViewVertical.addArrangedSubview(twittTextLabel)
         stackViewVertical.addArrangedSubview(stackViewTime)
@@ -156,7 +156,7 @@ private extension TwittDetailsController {
 
         stackViewHeader.addArrangedSubview(avatarView)
         stackViewHeader.addArrangedSubview(stackViewHeaderTitles)
-        
+
         stackViewHeaderTitles.addArrangedSubview(displayNameLabel)
         stackViewHeaderTitles.addArrangedSubview(identifierLabel)
 
@@ -166,7 +166,7 @@ private extension TwittDetailsController {
         stackViewFooter.addArrangedSubview(retweetLabel)
         stackViewFooter.addArrangedSubview(quoteLabel)
         stackViewFooter.addArrangedSubview(likeLabel)
-        
+
         stackViewHeader.snp.makeConstraints { snp in
             snp.height.equalTo(stackViewHeight)
         }
@@ -177,7 +177,7 @@ private extension TwittDetailsController {
             snp.height.equalTo(stackViewHeight)
         }
     }
-    
+
     func bind() {
         viewModel.$twitt
             .receive(on: DispatchQueue.main)
@@ -185,7 +185,7 @@ private extension TwittDetailsController {
                 self?.setData(twitt)
             }.store(in: &anyCancel)
     }
-    
+
     func setData(_ twitt: TwittResponse) {
         twittTextLabel.text = twitt.data?.text
         displayNameLabel.text = twitt.includes?.users[safe: 0]?.name
@@ -194,7 +194,7 @@ private extension TwittDetailsController {
         setDateTime(dateTimeString: twitt.data?.created_at ?? "")
         setFooterDate(twitt)
     }
-    
+
     func setDateTime(dateTimeString: String) {
         if !dateTimeString.isEmpty {
             let formatter = ISO8601DateFormatter()
@@ -210,7 +210,7 @@ private extension TwittDetailsController {
             }
         }
     }
-    
+
     func setFooterDate(_ twitt: TwittResponse) {
         func hideLabels() {
             retweetLabel.isHidden = true
@@ -230,5 +230,4 @@ private extension TwittDetailsController {
         quoteLabel.text = "\(publicMetrics.quote_count) \(Constants.StringLabels.quotesLabel)"
         quoteLabel.isHidden = publicMetrics.quote_count > 0 ? false : true
     }
-    
 }
