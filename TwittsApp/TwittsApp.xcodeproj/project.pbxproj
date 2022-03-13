@@ -31,6 +31,7 @@
 		115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EB27DD73B00086E7FE /* TwittResponse.swift */; };
 		115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */; };
 		115A02F027DD73C80086E7FE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EF27DD73C80086E7FE /* APIError.swift */; };
+		115A02F627DD74910086E7FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F527DD74910086E7FE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		115A02EB27DD73B00086E7FE /* TwittResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittResponse.swift; sourceTree = "<group>"; };
 		115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseProtocol.swift; sourceTree = "<group>"; };
 		115A02EF27DD73C80086E7FE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		115A02F527DD74910086E7FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		115A029127DD6A680086E7FE /* TwittsApp */ = {
 			isa = PBXGroup;
 			children = (
+				115A02F527DD74910086E7FE /* Constants.swift */,
 				115A02D827DD71F30086E7FE /* Extensions */,
 				115A02D727DD71D30086E7FE /* Model */,
 				115A02D627DD71C70086E7FE /* ViewModel */,
@@ -368,6 +371,7 @@
 				115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */,
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02F627DD74910086E7FE /* Constants.swift in Sources */,
 				115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */,
 				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
 				115A02F027DD73C80086E7FE /* APIError.swift in Sources */,
