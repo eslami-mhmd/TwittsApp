@@ -103,6 +103,11 @@
 		115A029127DD6A680086E7FE /* TwittsApp */ = {
 			isa = PBXGroup;
 			children = (
+				115A02D827DD71F30086E7FE /* Extensions */,
+				115A02D727DD71D30086E7FE /* Model */,
+				115A02D627DD71C70086E7FE /* ViewModel */,
+				115A02D527DD71C00086E7FE /* Repository */,
+				115A02D427DD71A80086E7FE /* Remote */,
 				115A02D127DD70130086E7FE /* View */,
 				115A029227DD6A680086E7FE /* AppDelegate.swift */,
 				115A029427DD6A680086E7FE /* SceneDelegate.swift */,
@@ -136,6 +141,41 @@
 				115A02D227DD70370086E7FE /* TwittsListController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		115A02D427DD71A80086E7FE /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		115A02D527DD71C00086E7FE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		115A02D627DD71C70086E7FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		115A02D727DD71D30086E7FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115A02D827DD71F30086E7FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
