@@ -10,8 +10,15 @@ import Foundation
 struct TwittModel: Hashable, Decodable {
     let identifier: String
     let text: String
-    let created_at: String?
-    let public_metrics: PublicMetric?
+    let createdAt: String?
+    let publicMetrics: PublicMetric?
+
+    enum CodingKeys: String, CodingKey {
+        case identifier = "id"
+        case text
+        case createdAt = "created_at"
+        case publicMetrics = "public_metrics"
+    }
 }
 
 struct PublicMetric: Decodable, Hashable {

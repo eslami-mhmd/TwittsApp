@@ -190,8 +190,8 @@ private extension TwittDetailsController {
         twittTextLabel.text = twitt.data?.text
         displayNameLabel.text = twitt.includes?.users[safe: 0]?.name
         identifierLabel.text = twitt.includes?.users[safe: 0]?.username
-        avatarView.setImage(urlString: twitt.includes?.users[safe: 0]?.profile_image_url)
-        setDateTime(dateTimeString: twitt.data?.created_at ?? "")
+        avatarView.setImage(urlString: twitt.includes?.users[safe: 0]?.profileImageUrl)
+        setDateTime(dateTimeString: twitt.data?.createdAt ?? "")
         setFooterDate(twitt)
     }
 
@@ -217,7 +217,7 @@ private extension TwittDetailsController {
             likeLabel.isHidden = true
             quoteLabel.isHidden = true
         }
-        guard let publicMetrics = twitt.data?.public_metrics else {
+        guard let publicMetrics = twitt.data?.publicMetrics else {
             hideLabels()
             return
         }
