@@ -38,6 +38,7 @@
 		115A02FD27DD76FD0086E7FE /* TwittResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EB27DD73B00086E7FE /* TwittResponse.swift */; };
 		115A02FE27DD77010086E7FE /* RemoteAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F727DD762E0086E7FE /* RemoteAPIMock.swift */; };
 		115A02FF27DD77060086E7FE /* RemoteAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F127DD742B0086E7FE /* RemoteAPIProtocol.swift */; };
+		115A030127DD77470086E7FE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030027DD77470086E7FE /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		115A02F327DD74500086E7FE /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
 		115A02F527DD74910086E7FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		115A02F727DD762E0086E7FE /* RemoteAPIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPIMock.swift; sourceTree = "<group>"; };
+		115A030027DD77470086E7FE /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		115A02D827DD71F30086E7FE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				115A030027DD77470086E7FE /* Collection+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				115A02F027DD73C80086E7FE /* APIError.swift in Sources */,
 				115A02E827DD73990086E7FE /* RuleResponse.swift in Sources */,
 				115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */,
+				115A030127DD77470086E7FE /* Collection+Extension.swift in Sources */,
 				115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */,
 				115A02EA27DD73A20086E7FE /* RuleDeleteResponse.swift in Sources */,
 				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
