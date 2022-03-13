@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  DraftTwitts
+//  TwittsApp
 //
 //  Created by Mohammad Eslami on 3/12/22.
 //

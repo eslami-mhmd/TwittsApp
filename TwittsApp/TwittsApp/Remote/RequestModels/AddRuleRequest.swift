@@ -1,6 +1,6 @@
 //
 //  AddRuleRequest.swift
-//  DraftTwitts
+//  TwittsApp
 //
 //  Created by Mohammad Eslami on 3/11/22.
 //

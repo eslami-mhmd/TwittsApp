@@ -1,6 +1,6 @@
 //
 //  TwittsListCell.swift
-//  DraftTwitts
+//  TwittsApp
 //
 //  Created by Mohammad Eslami on 3/9/22.
 //

@@ -1,9 +1,8 @@
 //
-//  AvatarButton.swift
-//  Gap
+//  AvatarView.swift
+//  TwittsApp
 //
-//  Created by eslami on 7/1/20.
-//  Copyright © 2020 TSIT. All rights reserved.
+//  Created by Mohammad Eslami on 3/10/22.
 //
 
 import Foundation

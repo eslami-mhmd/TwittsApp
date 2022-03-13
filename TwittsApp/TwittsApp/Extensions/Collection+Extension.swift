@@ -1,9 +1,8 @@
 //
 //  Collection+Extension.swift
-//  Gap
+//  TwittsApp
 //
-//  Created by eslami on 4/8/20.
-//  Copyright © 2020 TSIT. All rights reserved.
+//  Created by Mohammad Eslami on 3/10/22.
 //
 
 import Foundation
