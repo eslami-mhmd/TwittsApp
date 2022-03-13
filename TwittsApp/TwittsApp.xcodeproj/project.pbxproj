@@ -17,6 +17,7 @@
 		115A02CA27DD6DD00086E7FE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02C927DD6DD00086E7FE /* Alamofire */; };
 		115A02CD27DD6EBB0086E7FE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02CC27DD6EBB0086E7FE /* SnapKit */; };
 		115A02D027DD6EFC0086E7FE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 115A02CF27DD6EFC0086E7FE /* Kingfisher */; };
+		115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D227DD70370086E7FE /* TwittsListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		115A02AF27DD6A690086E7FE /* TwittsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwittsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115A02B327DD6A690086E7FE /* TwittsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITests.swift; sourceTree = "<group>"; };
 		115A02B527DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwittsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		115A02D227DD70370086E7FE /* TwittsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		115A029127DD6A680086E7FE /* TwittsApp */ = {
 			isa = PBXGroup;
 			children = (
+				115A02D127DD70130086E7FE /* View */,
 				115A029227DD6A680086E7FE /* AppDelegate.swift */,
 				115A029427DD6A680086E7FE /* SceneDelegate.swift */,
 				115A029B27DD6A690086E7FE /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				115A02B527DD6A690086E7FE /* TwittsAppUITestsLaunchTests.swift */,
 			);
 			path = TwittsAppUITests;
+			sourceTree = "<group>";
+		};
+		115A02D127DD70130086E7FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				115A02D227DD70370086E7FE /* TwittsListController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 			files = (
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
