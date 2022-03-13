@@ -47,6 +47,7 @@
 		115A030B27DD787A0086E7FE /* TwittsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */; };
 		115A030C27DD78860086E7FE /* TwittsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */; };
 		115A030E27DD78CA0086E7FE /* TwittDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */; };
+		115A031027DD792F0086E7FE /* ReuseIdentifyingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepositoryMock.swift; sourceTree = "<group>"; };
 		115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListViewModel.swift; sourceTree = "<group>"; };
 		115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittDetailsViewModel.swift; sourceTree = "<group>"; };
+		115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifyingProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		115A02D127DD70130086E7FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				115A030F27DD792F0086E7FE /* ReuseIdentifyingProtocol.swift */,
 				115A02D227DD70370086E7FE /* TwittsListController.swift */,
 			);
 			path = View;
@@ -409,6 +412,7 @@
 				115A02F427DD74500086E7FE /* RemoteAPI.swift in Sources */,
 				115A02F627DD74910086E7FE /* Constants.swift in Sources */,
 				115A030B27DD787A0086E7FE /* TwittsListViewModel.swift in Sources */,
+				115A031027DD792F0086E7FE /* ReuseIdentifyingProtocol.swift in Sources */,
 				115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */,
 				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
 				115A02F027DD73C80086E7FE /* APIError.swift in Sources */,
