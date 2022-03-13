@@ -39,6 +39,8 @@
 		115A02FE27DD77010086E7FE /* RemoteAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F727DD762E0086E7FE /* RemoteAPIMock.swift */; };
 		115A02FF27DD77060086E7FE /* RemoteAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02F127DD742B0086E7FE /* RemoteAPIProtocol.swift */; };
 		115A030127DD77470086E7FE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030027DD77470086E7FE /* Collection+Extension.swift */; };
+		115A030327DD77A30086E7FE /* TwittsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */; };
+		115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030027DD77470086E7FE /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,7 @@
 		115A02F527DD74910086E7FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		115A02F727DD762E0086E7FE /* RemoteAPIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPIMock.swift; sourceTree = "<group>"; };
 		115A030027DD77470086E7FE /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,7 @@
 		115A02D527DD71C00086E7FE /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -399,6 +403,7 @@
 				115A02EA27DD73A20086E7FE /* RuleDeleteResponse.swift in Sources */,
 				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
 				115A02F827DD762F0086E7FE /* RemoteAPIMock.swift in Sources */,
+				115A030327DD77A30086E7FE /* TwittsRepositoryProtocol.swift in Sources */,
 				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +419,7 @@
 				115A02FB27DD76E70086E7FE /* APIResponseProtocol.swift in Sources */,
 				115A02FE27DD77010086E7FE /* RemoteAPIMock.swift in Sources */,
 				115A02AA27DD6A690086E7FE /* TwittsAppTests.swift in Sources */,
+				115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */,
 				115A02FD27DD76FD0086E7FE /* TwittResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
