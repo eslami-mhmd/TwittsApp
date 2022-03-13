@@ -19,8 +19,8 @@ class RemoteAPIMock: RemoteAPIProtocol {
         for index in 0..<10 {
             let mockTwitt = TwittModel(identifier: String(index),
                                        text: "Text \(index)",
-                                       createdAt: String(Date().timeIntervalSince1970),
-                                       publicMetrics: PublicMetric(likeCount: 12,
+                                       created_at: String(Date().timeIntervalSince1970),
+                                       public_metrics: PublicMetric(likeCount: 12,
                                                                     retweetCount: 1,
                                                                     quoteCount: 0,
                                                                     replyCount: 0))
@@ -30,7 +30,7 @@ class RemoteAPIMock: RemoteAPIProtocol {
                                                                 [UserModel(identifier: "",
                                                                            username: "mohammad",
                                                                            name: "eslami",
-                                                                           profileImageUrl: "")]))
+                                                                           profile_image_url: "")]))
             self.twitt = twittResponse
         }
     }

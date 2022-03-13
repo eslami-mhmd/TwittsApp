@@ -132,8 +132,8 @@ extension TwittsListCell {
         twittTextLabel.text = twitt.data?.text
         displayNameLabel.text = twitt.includes?.users[safe: 0]?.name
         identifierLabel.text = twitt.includes?.users[safe: 0]?.username
-        avatarView.setImage(urlString: twitt.includes?.users[safe: 0]?.profileImageUrl)
-        setTime(twitt.data?.createdAt ?? "")
+        avatarView.setImage(urlString: twitt.includes?.users[safe: 0]?.profile_image_url)
+        setTime(twitt.data?.created_at ?? "")
     }
 
     func setTime(_ timeString: String) {

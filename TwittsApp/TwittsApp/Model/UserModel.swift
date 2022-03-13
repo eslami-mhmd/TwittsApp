@@ -11,11 +11,5 @@ struct UserModel: Decodable, Hashable {
     let identifier: String
     let username: String
     let name: String
-    let profileImageUrl: String
-
-    enum CodingKeys: String, CodingKey {
-        case identifier = "id"
-        case username, name
-        case profileImageUrl = "profile_image_url"
-    }
+    let profile_image_url: String
 }

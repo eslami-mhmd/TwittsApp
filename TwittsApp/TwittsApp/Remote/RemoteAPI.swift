@@ -8,43 +8,30 @@
 import Alamofire
 import Foundation
 
-enum TwittFields: String, Encodable {
-    case createdAt
-    case publicMetrics
-
-    enum CodingKeys: String, CodingKey {
-        case createdAt = "created_at"
-        case publicMetrics = "public_metrics"
-    }
-}
-enum TwittExpansions: String, Encodable {
-    case authorId
-
-    enum CodingKeys: String, CodingKey {
-        case authorId = "author_id"
-    }
-}
-enum UserFields: String, Encodable {
-    case profileImageUrl
-
-    enum CodingKeys: String, CodingKey {
-        case profileImageUrl = "profile_image_url"
-    }
-}
-struct TwittParams: Encodable {
-    let tweetFields: String?
-    let expansions: String?
-    let userFields: String?
-
-    enum CodingKeys: String, CodingKey {
-        case tweetFields = "tweet.fields"
-        case expansions
-        case userFields = "user.fields"
-    }
-}
-
 class RemoteAPI: RemoteAPIProtocol {
   // MARK: - Properties
+    enum TwittFields: String, Encodable {
+        case created_at
+        case public_metrics
+    }
+    enum TwittExpansions: String, Encodable {
+        case author_id
+    }
+    enum UserFields: String, Encodable {
+        case profile_image_url
+    }
+    struct TwittParams: Encodable {
+        let tweetFields: String?
+        let expansions: String?
+        let userFields: String?
+
+        enum CodingKeys: String, CodingKey {
+            case tweetFields = "tweet.fields"
+            case expansions
+            case userFields = "user.fields"
+        }
+    }
+
     @Published private(set) var twitt: TwittResponse?
     var twittPublished: Published<TwittResponse?> { _twitt }
     var twittPublisher: Published<TwittResponse?>.Publisher { $twitt }
@@ -57,10 +44,10 @@ class RemoteAPI: RemoteAPIProtocol {
     func fetchTwitts() async throws {
         if let streamURL = URL(string: Constants.Network.baseURL.appending("search/stream")) {
             let params = TwittParams(tweetFields: joinParamValues(values: [
-                TwittFields.createdAt,
-                TwittFields.publicMetrics]),
-                                     expansions: TwittExpansions.authorId.rawValue,
-                                     userFields: UserFields.profileImageUrl.rawValue)
+                TwittFields.created_at,
+                TwittFields.public_metrics]),
+                                     expansions: TwittExpansions.author_id.rawValue,
+                                     userFields: UserFields.profile_image_url.rawValue)
             let streamTask = AF.streamRequest(streamURL,
                                               method: .get,
                                               parameters: params,
