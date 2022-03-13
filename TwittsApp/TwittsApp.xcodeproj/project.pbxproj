@@ -154,6 +154,8 @@
 		115A02D427DD71A80086E7FE /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				115A02E127DD73000086E7FE /* RequestModels */,
+				115A02E227DD730A0086E7FE /* ResponseModels */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -186,6 +188,20 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		115A02E127DD73000086E7FE /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		115A02E227DD730A0086E7FE /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
