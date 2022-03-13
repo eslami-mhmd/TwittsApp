@@ -42,6 +42,7 @@
 		115A030327DD77A30086E7FE /* TwittsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */; };
 		115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030027DD77470086E7FE /* Collection+Extension.swift */; };
 		115A030627DD77DE0086E7FE /* TwittsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030527DD77DE0086E7FE /* TwittsRepository.swift */; };
+		115A030827DD781C0086E7FE /* TwittsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		115A030027DD77470086E7FE /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		115A030527DD77DE0086E7FE /* TwittsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepository.swift; sourceTree = "<group>"; };
+		115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepositoryMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */,
 				115A030527DD77DE0086E7FE /* TwittsRepository.swift */,
+				115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			files = (
 				115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */,
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
+				115A030827DD781C0086E7FE /* TwittsRepositoryMock.swift in Sources */,
 				115A02F227DD742B0086E7FE /* RemoteAPIProtocol.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
 				115A02F427DD74500086E7FE /* RemoteAPI.swift in Sources */,
