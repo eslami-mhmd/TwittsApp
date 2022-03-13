@@ -51,6 +51,7 @@
 		115A031327DD79720086E7FE /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A031227DD79720086E7FE /* AvatarView.swift */; };
 		115A031627DD7A560086E7FE /* TwittsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A031527DD7A560086E7FE /* TwittsListCell.swift */; };
 		115A031927DD7B050086E7FE /* TwittDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A031827DD7B050086E7FE /* TwittDetailsController.swift */; };
+		115A031A27DD7C470086E7FE /* TwittsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030227DD77A30086E7FE /* TwittsRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -480,6 +481,7 @@
 				115A02AA27DD6A690086E7FE /* TwittsListViewModelTests.swift in Sources */,
 				115A030C27DD78860086E7FE /* TwittsListViewModel.swift in Sources */,
 				115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */,
+				115A031A27DD7C470086E7FE /* TwittsRepositoryProtocol.swift in Sources */,
 				115A02FD27DD76FD0086E7FE /* TwittResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
