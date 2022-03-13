@@ -24,6 +24,8 @@
 		115A02DE27DD72A20086E7FE /* TwittModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02D927DD72760086E7FE /* TwittModel.swift */; };
 		115A02DF27DD72A40086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
 		115A02E027DD72A50086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
+		115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E327DD73560086E7FE /* AddRuleRequest.swift */; };
+		115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E527DD735E0086E7FE /* DeleteRuleRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		115A02D227DD70370086E7FE /* TwittsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListController.swift; sourceTree = "<group>"; };
 		115A02D927DD72760086E7FE /* TwittModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittModel.swift; sourceTree = "<group>"; };
 		115A02DB27DD72850086E7FE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		115A02E327DD73560086E7FE /* AddRuleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRuleRequest.swift; sourceTree = "<group>"; };
+		115A02E527DD735E0086E7FE /* DeleteRuleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRuleRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 		115A02E127DD73000086E7FE /* RequestModels */ = {
 			isa = PBXGroup;
 			children = (
+				115A02E327DD73560086E7FE /* AddRuleRequest.swift */,
+				115A02E527DD735E0086E7FE /* DeleteRuleRequest.swift */,
 			);
 			path = RequestModels;
 			sourceTree = "<group>";
@@ -347,6 +353,8 @@
 				115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */,
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
+				115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */,
 				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
 				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
 			);
