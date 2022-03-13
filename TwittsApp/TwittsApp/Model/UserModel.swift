@@ -8,7 +8,7 @@
 import Foundation
 
 struct UserModel: Decodable, Hashable {
-    let id: String
+    let identifier: String
     let username: String
     let name: String
     let profile_image_url: String

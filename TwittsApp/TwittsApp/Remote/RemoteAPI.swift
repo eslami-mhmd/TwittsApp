@@ -74,8 +74,8 @@ class RemoteAPI: RemoteAPIProtocol {
         }
     }
 
-    func deleteRule(id: String) async throws {
-        let rule = DeleteRule(delete: DeleteRuleValue(ids: [id]))
+    func deleteRule(identifier: String) async throws {
+        let rule = DeleteRule(delete: DeleteRuleValue(ids: [identifier]))
         let jsonData = try JSONEncoder().encode(rule)
 
         if let url = URL(string: Constants.Network.baseURL.appending("search/stream/rules")) {
@@ -99,7 +99,7 @@ class RemoteAPI: RemoteAPIProtocol {
             if let errors = result.errors, let error = errors.first {
                 throw error
             }
-            return result.data?.first?.id
+            return result.data?.first?.identifier
         }
         return nil
     }

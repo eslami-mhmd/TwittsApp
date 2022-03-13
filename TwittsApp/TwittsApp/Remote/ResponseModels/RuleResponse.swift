@@ -12,6 +12,6 @@ struct RuleResponse: Decodable, APIResponseProtocol {
     let errors: [APIError]?
 }
 struct RuleValuesResponse: Decodable {
-    let id: String
+    let identifier: String
     let value: String
 }

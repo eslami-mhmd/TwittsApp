@@ -31,8 +31,8 @@ class TwittsRepository: TwittsRepositoryProtocol {
     }
 
     func updateRule(ruleText: String) async throws {
-        if let id = try await remoteAPI.getRule() {
-            try await remoteAPI.deleteRule(id: id)
+        if let identifier = try await remoteAPI.getRule() {
+            try await remoteAPI.deleteRule(identifier: identifier)
             try await remoteAPI.addRule(ruleText: ruleText)
         } else {
             try await remoteAPI.addRule(ruleText: ruleText)

@@ -17,6 +17,6 @@ protocol RemoteAPIProtocol {
 
     func fetchTwitts() async throws
     func addRule(ruleText: String) async throws
-    func deleteRule(id: String) async throws
+    func deleteRule(identifier: String) async throws
     func getRule() async throws -> String?
 }

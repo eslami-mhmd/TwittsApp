@@ -8,15 +8,22 @@
 import Foundation
 
 struct TwittModel: Hashable, Decodable {
-    let id: String
+    let identifier: String
     let text: String
     let created_at: String?
     let public_metrics: PublicMetric?
 }
 
 struct PublicMetric: Decodable, Hashable {
-    let like_count: Int
-    let retweet_count: Int
-    let quote_count: Int
-    let reply_count: Int
+    let likeCount: Int
+    let retweetCount: Int
+    let quoteCount: Int
+    let replyCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case likeCount = "like_count"
+        case retweetCount = "retweet_count"
+        case quoteCount = "quote_count"
+        case replyCount = "reply_count"
+    }
 }
