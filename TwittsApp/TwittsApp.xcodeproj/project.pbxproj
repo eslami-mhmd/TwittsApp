@@ -26,6 +26,11 @@
 		115A02E027DD72A50086E7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02DB27DD72850086E7FE /* UserModel.swift */; };
 		115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E327DD73560086E7FE /* AddRuleRequest.swift */; };
 		115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E527DD735E0086E7FE /* DeleteRuleRequest.swift */; };
+		115A02E827DD73990086E7FE /* RuleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E727DD73990086E7FE /* RuleResponse.swift */; };
+		115A02EA27DD73A20086E7FE /* RuleDeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02E927DD73A20086E7FE /* RuleDeleteResponse.swift */; };
+		115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EB27DD73B00086E7FE /* TwittResponse.swift */; };
+		115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */; };
+		115A02F027DD73C80086E7FE /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A02EF27DD73C80086E7FE /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,11 @@
 		115A02DB27DD72850086E7FE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		115A02E327DD73560086E7FE /* AddRuleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRuleRequest.swift; sourceTree = "<group>"; };
 		115A02E527DD735E0086E7FE /* DeleteRuleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRuleRequest.swift; sourceTree = "<group>"; };
+		115A02E727DD73990086E7FE /* RuleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleResponse.swift; sourceTree = "<group>"; };
+		115A02E927DD73A20086E7FE /* RuleDeleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleDeleteResponse.swift; sourceTree = "<group>"; };
+		115A02EB27DD73B00086E7FE /* TwittResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittResponse.swift; sourceTree = "<group>"; };
+		115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseProtocol.swift; sourceTree = "<group>"; };
+		115A02EF27DD73C80086E7FE /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +216,11 @@
 		115A02E227DD730A0086E7FE /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				115A02E727DD73990086E7FE /* RuleResponse.swift */,
+				115A02E927DD73A20086E7FE /* RuleDeleteResponse.swift */,
+				115A02EB27DD73B00086E7FE /* TwittResponse.swift */,
+				115A02ED27DD73C10086E7FE /* APIResponseProtocol.swift */,
+				115A02EF27DD73C80086E7FE /* APIError.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -353,8 +368,13 @@
 				115A02DA27DD72760086E7FE /* TwittModel.swift in Sources */,
 				115A029327DD6A680086E7FE /* AppDelegate.swift in Sources */,
 				115A029527DD6A680086E7FE /* SceneDelegate.swift in Sources */,
+				115A02EC27DD73B00086E7FE /* TwittResponse.swift in Sources */,
 				115A02E427DD73560086E7FE /* AddRuleRequest.swift in Sources */,
+				115A02F027DD73C80086E7FE /* APIError.swift in Sources */,
+				115A02E827DD73990086E7FE /* RuleResponse.swift in Sources */,
+				115A02EE27DD73C10086E7FE /* APIResponseProtocol.swift in Sources */,
 				115A02E627DD735E0086E7FE /* DeleteRuleRequest.swift in Sources */,
+				115A02EA27DD73A20086E7FE /* RuleDeleteResponse.swift in Sources */,
 				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
 				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
 			);
