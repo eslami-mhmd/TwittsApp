@@ -46,6 +46,7 @@
 		115A030927DD783D0086E7FE /* TwittsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */; };
 		115A030B27DD787A0086E7FE /* TwittsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */; };
 		115A030C27DD78860086E7FE /* TwittsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */; };
+		115A030E27DD78CA0086E7FE /* TwittDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		115A030527DD77DE0086E7FE /* TwittsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepository.swift; sourceTree = "<group>"; };
 		115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsRepositoryMock.swift; sourceTree = "<group>"; };
 		115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittsListViewModel.swift; sourceTree = "<group>"; };
+		115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwittDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				115A030A27DD787A0086E7FE /* TwittsListViewModel.swift */,
+				115A030D27DD78CA0086E7FE /* TwittDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				115A02EA27DD73A20086E7FE /* RuleDeleteResponse.swift in Sources */,
 				115A02DC27DD72850086E7FE /* UserModel.swift in Sources */,
 				115A02F827DD762F0086E7FE /* RemoteAPIMock.swift in Sources */,
+				115A030E27DD78CA0086E7FE /* TwittDetailsViewModel.swift in Sources */,
 				115A030627DD77DE0086E7FE /* TwittsRepository.swift in Sources */,
 				115A030327DD77A30086E7FE /* TwittsRepositoryProtocol.swift in Sources */,
 				115A02D327DD70370086E7FE /* TwittsListController.swift in Sources */,
