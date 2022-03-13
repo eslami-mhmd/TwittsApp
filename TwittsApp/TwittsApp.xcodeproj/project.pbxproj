@@ -43,6 +43,7 @@
 		115A030427DD77A90086E7FE /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030027DD77470086E7FE /* Collection+Extension.swift */; };
 		115A030627DD77DE0086E7FE /* TwittsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030527DD77DE0086E7FE /* TwittsRepository.swift */; };
 		115A030827DD781C0086E7FE /* TwittsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */; };
+		115A030927DD783D0086E7FE /* TwittsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A030727DD781C0086E7FE /* TwittsRepositoryMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -422,6 +423,7 @@
 			files = (
 				115A02DD27DD72A10086E7FE /* TwittModel.swift in Sources */,
 				115A02F927DD76E40086E7FE /* APIError.swift in Sources */,
+				115A030927DD783D0086E7FE /* TwittsRepositoryMock.swift in Sources */,
 				115A02FF27DD77060086E7FE /* RemoteAPIProtocol.swift in Sources */,
 				115A02DF27DD72A40086E7FE /* UserModel.swift in Sources */,
 				115A02FB27DD76E70086E7FE /* APIResponseProtocol.swift in Sources */,
