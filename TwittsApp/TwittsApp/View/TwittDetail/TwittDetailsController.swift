@@ -221,13 +221,13 @@ private extension TwittDetailsController {
             hideLabels()
             return
         }
-        retweetLabel.text = "\(publicMetrics.retweetCount) \(Constants.StringLabels.retweetsLabel)"
-        retweetLabel.isHidden = publicMetrics.retweetCount > 0 ? false : true
+        retweetLabel.text = "\(publicMetrics.retweet_count) \(Constants.StringLabels.retweetsLabel)"
+        retweetLabel.isHidden = publicMetrics.retweet_count > 0 ? false : true
 
-        likeLabel.text = "\(publicMetrics.likeCount) \(Constants.StringLabels.likesLabel)"
-        likeLabel.isHidden = publicMetrics.likeCount > 0 ? false : true
+        likeLabel.text = "\(publicMetrics.like_count) \(Constants.StringLabels.likesLabel)"
+        likeLabel.isHidden = publicMetrics.like_count > 0 ? false : true
 
-        quoteLabel.text = "\(publicMetrics.quoteCount) \(Constants.StringLabels.quotesLabel)"
-        quoteLabel.isHidden = publicMetrics.quoteCount > 0 ? false : true
+        quoteLabel.text = "\(publicMetrics.quote_count) \(Constants.StringLabels.quotesLabel)"
+        quoteLabel.isHidden = publicMetrics.quote_count > 0 ? false : true
     }
 }

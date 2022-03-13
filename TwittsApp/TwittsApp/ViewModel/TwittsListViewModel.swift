@@ -32,7 +32,7 @@ class TwittsListViewModel: ObservableObject {
                     twitts.append(twitt)
                     twitts.sort(by: {
                         if let data0 = $0.data, let data1 = $1.data {
-                            return data0.identifier > data1.identifier
+                            return data0.id > data1.id
                         } else {
                             return true
                         }

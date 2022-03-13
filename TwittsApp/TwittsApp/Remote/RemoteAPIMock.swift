@@ -16,18 +16,18 @@ class RemoteAPIMock: RemoteAPIProtocol {
 
   // MARK: - Methods
     func fetchTwitts() async throws {
-        for index in 0..<10 {
-            let mockTwitt = TwittModel(identifier: String(index),
-                                       text: "Text \(index)",
+        for i in 0..<10 {
+            let mockTwitt = TwittModel(id: String(i),
+                                       text: "Text \(i)",
                                        created_at: String(Date().timeIntervalSince1970),
-                                       public_metrics: PublicMetric(likeCount: 12,
-                                                                    retweetCount: 1,
-                                                                    quoteCount: 0,
-                                                                    replyCount: 0))
+                                       public_metrics: PublicMetric(like_count: 12,
+                                                                    retweet_count: 1,
+                                                                    quote_count: 0,
+                                                                    reply_count: 0))
             let twittResponse = TwittResponse(data: mockTwitt,
                                               errors: nil,
                                               includes: User(users:
-                                                                [UserModel(identifier: "",
+                                                                [UserModel(id: "",
                                                                            username: "mohammad",
                                                                            name: "eslami",
                                                                            profile_image_url: "")]))
@@ -38,7 +38,7 @@ class RemoteAPIMock: RemoteAPIProtocol {
     func addRule(ruleText: String) async throws {
     }
 
-    func deleteRule(identifier: String) async throws {
+    func deleteRule(id: String) async throws {
     }
 
     func getRule() async throws -> String? {
